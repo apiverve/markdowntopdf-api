@@ -9,22 +9,15 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/markdowntopdf';
 
 /**
- * Make a POST request to the Markdown to PDF API
+ * Make a GET request to the Markdown to PDF API
  */
 async function callMarkdowntoPDFAPI() {
   try {
-    // Request body
-    const requestBody &#x3D; {
-    &quot;markdown&quot;: &quot;# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don&#x27;t forget this\n\n## Conclusion\n\nThank you for using our API!&quot;
-};
-
     const response = await fetch(API_URL, {
-      method: 'POST',
+      method: 'GET',
       headers: {
-        'x-api-key': API_KEY,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
+        'x-api-key': API_KEY
+      }
     });
 
     // Check if response is successful
