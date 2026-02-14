@@ -12,26 +12,8 @@ public class BasicExample {
         MarkdowntoPDFAPIClient client = new MarkdowntoPDFAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Request body
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;markdown&quot;, &quot;# Sample Document
-
-## Introduction
-
-This is a sample markdown document that will be converted to PDF.
-
-### Key Points
-
-- **First point**: This is important
-- **Second point**: This is also important
-- *Third point*: Don&#x27;t forget this
-
-## Conclusion
-
-Thank you for using our API!&quot;);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
