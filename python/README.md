@@ -44,7 +44,21 @@ from apiverve_markdowntopdf.apiClient import MarkdowntopdfAPIClient
 # Initialize the client with your APIVerve API key
 api = MarkdowntopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!" }
+query = { "markdown": "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!" }
 
 try:
     # Make the API call
@@ -82,7 +96,21 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!" }
+query = { "markdown": "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!" }
 ```
 
 ###### Simple Request
@@ -129,7 +157,21 @@ from apiverve_markdowntopdf.apiClient import MarkdowntopdfAPIClient, Markdowntop
 
 api = MarkdowntopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!" }
+query = { "markdown": "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!" }
 
 try:
     result = api.execute(query)
@@ -150,7 +192,21 @@ from apiverve_markdowntopdf.apiClient import MarkdowntopdfAPIClient, Markdowntop
 
 api = MarkdowntopdfAPIClient("[YOUR_API_KEY]")
 
-query = { "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!" }
+query = { "markdown": "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!" }
 
 try:
     result = api.execute(query)
@@ -184,7 +240,21 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_markdowntopdf.apiClient import MarkdowntopdfAPIClient, MarkdowntopdfAPIClientError
 
-query = { "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!" }
+query = { "markdown": "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!" }
 
 # Using context manager ensures proper cleanup
 with MarkdowntopdfAPIClient("[YOUR_API_KEY]") as api:
@@ -210,7 +280,21 @@ from apiverve_markdowntopdf.apiClient import MarkdowntopdfAPIClient
 # Enable debug mode
 api = MarkdowntopdfAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!" }
+query = { "markdown": "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!" }
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -225,8 +309,23 @@ from apiverve_markdowntopdf.apiClient import MarkdowntopdfAPIClient
 
 api = MarkdowntopdfAPIClient("[YOUR_API_KEY]")
 
+query = { "markdown": "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!" }
+
 try:
-    query = { "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!" }
     result = api.execute(query)
     print(result)
 finally:
