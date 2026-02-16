@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:markdowntopdf-api:1.1.13'
+    implementation 'com.github.apiverve:markdowntopdf-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,21 @@ MarkdowntoPDFAPIClient client = new MarkdowntoPDFAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("markdown", "# Title\n\nThis is **bold** text.");
+    parameters.put("markdown", "# Sample Document
+
+## Introduction
+
+This is a sample markdown document that will be converted to PDF.
+
+### Key Points
+
+- **First point**: This is important
+- **Second point**: This is also important
+- *Third point*: Don't forget this
+
+## Conclusion
+
+Thank you for using our API!");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
