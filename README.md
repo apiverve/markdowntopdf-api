@@ -15,7 +15,10 @@ The Markdown to PDF API provides a simple, reliable way to integrate markdown to
 [![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/markdowntopdf)
 [![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.MarkdowntoPDF)
 [![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-markdowntopdf/)
+[![RubyGems](https://img.shields.io/badge/RubyGems-E9573F?style=flat&logo=rubygems&logoColor=white)](https://rubygems.org/gems/apiverve_markdowntopdf)
+[![Packagist](https://img.shields.io/badge/Packagist-F28D1A?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/apiverve/markdowntopdf)
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://pub.dev/packages/apiverve_markdowntopdf)
 [![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
 
 ---
@@ -88,6 +91,36 @@ pip install apiverve-markdowntopdf
 ```
 
 [**View PyPI Package →**](https://pypi.org/project/apiverve-markdowntopdf/) | [**Package Code →**](./python/)
+
+---
+
+### 💎 Ruby (RubyGems)
+
+```bash
+gem install apiverve_markdowntopdf
+```
+
+[**View RubyGems Package →**](https://rubygems.org/gems/apiverve_markdowntopdf) | [**Package Code →**](./ruby/)
+
+---
+
+### 🐘 PHP (Packagist)
+
+```bash
+composer require apiverve/markdowntopdf
+```
+
+[**View Packagist Package →**](https://packagist.org/packages/apiverve/markdowntopdf) | [**Package Code →**](./php/)
+
+---
+
+### 🎯 Dart (pub.dev)
+
+```bash
+dart pub add apiverve_markdowntopdf
+```
+
+[**View pub.dev Package →**](https://pub.dev/packages/apiverve_markdowntopdf) | [**Package Code →**](./dart/)
 
 ---
 
