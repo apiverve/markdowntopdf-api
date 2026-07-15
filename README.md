@@ -8,7 +8,7 @@ The Markdown to PDF API provides a simple, reliable way to integrate markdown to
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/markdowntopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-[![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
+[![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
 **Available on:**
@@ -30,11 +30,17 @@ The Markdown to PDF API provides a simple, reliable way to integrate markdown to
 ```javascript
 async function callMarkdowntoPDFAPI() {
     try {
+        const requestBody = {
+    "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don't forget this\n\n## Conclusion\n\nThank you for using our API!"
+};
+
         const response = await fetch('https://api.apiverve.com/v1/markdowntopdf', {
-            method: 'GET',
+            method: 'POST',
             headers: {
-                'x-api-key': 'YOUR_API_KEY_HERE'
-            }
+                'x-api-key': 'YOUR_API_KEY_HERE',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
         });
 
         const data = await response.json();
@@ -50,8 +56,12 @@ callMarkdowntoPDFAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/markdowntopdf?param=value" \
-  -H "x-api-key: YOUR_API_KEY_HERE"
+curl -X POST "https://api.apiverve.com/v1/markdowntopdf" \
+  -H "x-api-key: YOUR_API_KEY_HERE" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "markdown": "# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don'\''t forget this\n\n## Conclusion\n\nThank you for using our API!"
+}'
 ```
 
 **Get your API key:** [https://apiverve.com](https://apiverve.com)
@@ -150,7 +160,7 @@ go get github.com/apiverve/markdowntopdf-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +179,7 @@ go get github.com/apiverve/markdowntopdf-api/go
 The Markdown to PDF API is commonly used for:
 
 - **Web Applications** - Add markdown to pdf features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with markdown to pdf capabilities
 - **Data Pipelines** - Process and analyze data at scale
