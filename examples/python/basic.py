@@ -14,14 +14,20 @@ API_URL = 'https://api.apiverve.com/v1/markdowntopdf'
 
 def call_markdowntopdf_api():
     """
-    Make a GET request to the Markdown to PDF API
+    Make a POST request to the Markdown to PDF API
     """
     try:
+        # Request body
+        request_body &#x3D; {
+    &#x27;markdown&#x27;: &#x27;# Sample Document\n\n## Introduction\n\nThis is a sample markdown document that will be converted to PDF.\n\n### Key Points\n\n- **First point**: This is important\n- **Second point**: This is also important\n- *Third point*: Don&#x27;t forget this\n\n## Conclusion\n\nThank you for using our API!&#x27;
+}
+
         headers = {
-            'x-api-key': API_KEY
+            'x-api-key': API_KEY,
+            'Content-Type': 'application/json'
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.post(API_URL, headers=headers, json=request_body)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
