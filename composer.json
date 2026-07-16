@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/markdowntopdf",
+    "description": "Markdown to PDF converts markdown text into professionally formatted PDF documents with Base64-encoded output for easy downloading.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "markdowntopdf",
+        "markdown to pdf",
+        "pdf generator",
+        "markdown converter",
+        "document generation",
+        "pdf export"
+    ],
+    "homepage": "https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/markdowntopdf",
+        "source": "https://github.com/apiverve/markdowntopdf-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Markdowntopdf\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Markdowntopdf\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
