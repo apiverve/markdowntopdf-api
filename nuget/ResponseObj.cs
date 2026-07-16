@@ -25,6 +25,9 @@ namespace APIVerve.API.MarkdowntoPDF
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -42,21 +45,33 @@ namespace APIVerve.API.MarkdowntoPDF
         public string MarginBottom { get; set; }
 
         [JsonProperty("landscape")]
-        public bool Landscape { get; set; }
+        public bool? Landscape { get; set; }
 
         [JsonProperty("pdfName")]
         public string PdfName { get; set; }
 
         [JsonProperty("expires")]
-        public long Expires { get; set; }
+        public long? Expires { get; set; }
 
         [JsonProperty("downloadURL")]
         public Uri DownloadUrl { get; set; }
 
         [JsonProperty("markdownLength")]
-        public long MarkdownLength { get; set; }
+        public long? MarkdownLength { get; set; }
 
         [JsonProperty("htmlLength")]
-        public long HtmlLength { get; set; }
+        public long? HtmlLength { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
