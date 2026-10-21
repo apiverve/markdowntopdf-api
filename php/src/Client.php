@@ -33,7 +33,7 @@ Thank you for using our API!']);
  * print_r($response);
  * ```
  *
- * @see https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
@@ -48,7 +48,7 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'markdown' => ['type' => 'string', 'required' => true]
+        'markdown' => ['type' => 'string', 'required' => true, 'maxLength' => 500000]
     ];
 
     /**

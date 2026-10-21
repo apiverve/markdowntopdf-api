@@ -1,6 +1,6 @@
 # Markdown to PDF API - PHP Package
 
-Markdown to PDF converts markdown text into professionally formatted PDF documents with Base64-encoded output for easy downloading.
+Markdown to PDF is a PDF generator API that converts markdown text into professionally formatted PDF documents and returns a temporary download URL for each file.
 
 ## Installation
 
@@ -118,11 +118,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/markdowntopdf?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/markdowntopdf?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

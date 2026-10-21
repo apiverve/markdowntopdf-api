@@ -1,7 +1,7 @@
 {
     "name": "apiverve/markdowntopdf",
-    "description": "Markdown to PDF converts markdown text into professionally formatted PDF documents with Base64-encoded output for easy downloading.",
-    "version": "1.2.0",
+    "description": "Markdown to PDF is a PDF generator API that converts markdown text into professionally formatted PDF documents and returns a temporary download URL for each file.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "markdowntopdf",
-        "markdown to pdf",
-        "pdf generator",
-        "markdown converter",
-        "document generation",
-        "pdf export"
+        "pdf generator api",
+        "markdown to pdf api",
+        "markdown to pdf converter api",
+        "pdf creator api",
+        "free pdf generator api"
     ],
-    "homepage": "https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/markdowntopdf?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/markdowntopdf",
