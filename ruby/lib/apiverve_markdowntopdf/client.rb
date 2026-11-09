@@ -33,7 +33,7 @@ Thank you for using our API!" })
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'markdown' => { type: 'string', required: true, max_length: 500000 } }
+      VALIDATION_RULES = { 'markdown' => { type: 'string', required: true, max_length: 500000 }, 'format' => { type: 'string', required: false }, 'landscape' => { type: 'boolean', required: false }, 'marginTop' => { type: 'number', required: false, min: 0, max: 5 }, 'marginRight' => { type: 'number', required: false, min: 0, max: 5 }, 'marginBottom' => { type: 'number', required: false, min: 0, max: 5 }, 'marginLeft' => { type: 'number', required: false, min: 0, max: 5 }, 'css' => { type: 'string', required: false, max_length: 100000 }, 'headerTemplate' => { type: 'string', required: false, format: 'date' }, 'footerTemplate' => { type: 'string', required: false } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {

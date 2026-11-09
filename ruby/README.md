@@ -1,6 +1,6 @@
 # Markdown to PDF API - Ruby Gem
 
-Markdown to PDF is a PDF generator API that converts markdown text into professionally formatted PDF documents and returns a temporary download URL for each file.
+Markdown to PDF is a PDF generator API that converts markdown text into professionally formatted PDF documents and returns a temporary download URL for each file. Paid plans can set the paper size, orientation and margins, style the document with their own CSS, and print a header and footer with page numbers on every page.
 
 ## Installation
 
@@ -35,21 +35,18 @@ require 'apiverve_markdowntopdf'
 client = APIVerve::Markdowntopdf::Client.new(api_key: "YOUR_API_KEY")
 
 # Make a request
-response = client.execute({ markdown: "# Sample Document
-
-## Introduction
-
-This is a sample markdown document that will be converted to PDF.
-
-### Key Points
-
-- **First point**: This is important
-- **Second point**: This is also important
-- *Third point*: Don't forget this
-
-## Conclusion
-
-Thank you for using our API!" })
+response = client.execute({
+  markdown: "# Title\n\nThis is **bold** text.",
+  format: "A4",
+  landscape: ,
+  marginTop: 0.4,
+  marginRight: 0.4,
+  marginBottom: 0.4,
+  marginLeft: 0.4,
+  css: "body { font-family: Helvetica, Arial, sans-serif; line-height: 1.5 }",
+  headerTemplate: "<div style=\"font-size:9px;width:100%;text-align:center\">Release notes</div>",
+  footerTemplate: "<div style=\"font-size:9px;width:100%;text-align:center\"><span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></div>"
+})
 
 # Print the response
 puts response
