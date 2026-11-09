@@ -1,0 +1,16 @@
+name: apiverve_markdowntopdf
+description: "Markdown to PDF is a PDF generator API that converts markdown text into professionally formatted PDF documents and returns a temporary download URL for each file. Paid plans can set the paper size, orientation and margins, style the document with their own CSS, and print a header and footer with page numbers on every page."
+version: 1.2.5
+homepage: https://apiverve.com/marketplace/markdowntopdf?utm_source=dart&utm_medium=referral&utm_content=homepage
+repository: https://github.com/apiverve/markdowntopdf-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
