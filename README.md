@@ -1,6 +1,6 @@
 # [Markdown to PDF API](https://apiverve.com/marketplace/markdowntopdf?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Markdown to PDF is a PDF generator API that converts markdown text into professionally formatted PDF documents and returns a temporary download URL for each file.
+Markdown to PDF is a PDF generator API that converts markdown text into professionally formatted PDF documents and returns a temporary download URL for each file. Paid plans can set the paper size, orientation and margins, style the document with their own CSS, and print a header and footer with page numbers on every page.
 
 The Markdown to PDF API provides a simple, reliable way to integrate markdown to pdf functionality into your applications. Built for developers who need production-ready markdown to pdf capabilities without the complexity of building from scratch.
 

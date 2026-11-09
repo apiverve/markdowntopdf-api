@@ -4,7 +4,9 @@ info:
   description: >-
     Markdown to PDF is a PDF generator API that converts markdown text into
     professionally formatted PDF documents and returns a temporary download URL
-    for each file.
+    for each file. Paid plans can set the paper size, orientation and margins,
+    style the document with their own CSS, and print a header and footer with
+    page numbers on every page.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -20,7 +22,9 @@ paths:
   /v1/markdowntopdf:
     post:
       summary: Markdown to PDF
-      description: Convert markdown text to PDF document
+      description: >-
+        Convert markdown text to PDF document, optionally with a paper size,
+        orientation, margins, custom CSS and a header and footer
       operationId: markdowntopdf
       parameters: []
       responses:
@@ -70,6 +74,44 @@ paths:
                 markdown:
                   type: string
                   description: Markdown text to convert (max 100,000 characters)
+                format:
+                  type: string
+                  description: Paper size
+                landscape:
+                  type: boolean
+                  description: Set to true for landscape orientation
+                marginTop:
+                  type: number
+                  description: The top margin in inches
+                marginRight:
+                  type: number
+                  description: The right margin in inches
+                marginBottom:
+                  type: number
+                  description: The bottom margin in inches
+                marginLeft:
+                  type: number
+                  description: The left margin in inches
+                css:
+                  type: string
+                  description: >-
+                    Stylesheet applied to the rendered markdown, e.g. body {
+                    font-family: Georgia, serif } table { border-collapse:
+                    collapse }
+                headerTemplate:
+                  type: string
+                  description: >-
+                    HTML printed at the top of every page. Spans with class
+                    pageNumber, totalPages, date or title are filled in. Use
+                    inline styles with a font-size (Chromium defaults to a tiny
+                    font) and leave room with marginTop
+                footerTemplate:
+                  type: string
+                  description: >-
+                    HTML printed at the bottom of every page, with the same
+                    placeholders as headerTemplate, e.g. <span
+                    class="pageNumber"></span> of <span
+                    class="totalPages"></span>
               required:
                 - markdown
 components:
