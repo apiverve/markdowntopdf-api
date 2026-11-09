@@ -48,7 +48,16 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'markdown' => ['type' => 'string', 'required' => true, 'maxLength' => 500000]
+        'markdown' => ['type' => 'string', 'required' => true, 'maxLength' => 500000],
+        'format' => ['type' => 'string', 'required' => false],
+        'landscape' => ['type' => 'boolean', 'required' => false],
+        'marginTop' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
+        'marginRight' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
+        'marginBottom' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
+        'marginLeft' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
+        'css' => ['type' => 'string', 'required' => false, 'maxLength' => 100000],
+        'headerTemplate' => ['type' => 'string', 'required' => false, 'format' => 'date'],
+        'footerTemplate' => ['type' => 'string', 'required' => false]
     ];
 
     /**
