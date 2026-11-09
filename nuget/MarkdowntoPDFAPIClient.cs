@@ -67,7 +67,16 @@ namespace APIVerve.API.MarkdowntoPDF
         /// <summary>Validation rules for parameters</summary>
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
-            { "markdown", new ValidationRule { Type = "string", Required = true, MaxLength = 500000 } }
+            { "markdown", new ValidationRule { Type = "string", Required = true, MaxLength = 500000 } },
+            { "format", new ValidationRule { Type = "string", Required = false } },
+            { "landscape", new ValidationRule { Type = "boolean", Required = false } },
+            { "marginTop", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
+            { "marginRight", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
+            { "marginBottom", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
+            { "marginLeft", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
+            { "css", new ValidationRule { Type = "string", Required = false, MaxLength = 100000 } },
+            { "headerTemplate", new ValidationRule { Type = "string", Required = false, Format = "date" } },
+            { "footerTemplate", new ValidationRule { Type = "string", Required = false } }
         };
 
         /// <summary>Format validation patterns</summary>
