@@ -51,12 +51,12 @@ class Client
         'markdown' => ['type' => 'string', 'required' => true, 'maxLength' => 500000],
         'format' => ['type' => 'string', 'required' => false],
         'landscape' => ['type' => 'boolean', 'required' => false],
-        'marginTop' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
-        'marginRight' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
-        'marginBottom' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
-        'marginLeft' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 5],
+        'marginTop' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 4],
+        'marginRight' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 4],
+        'marginBottom' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 4],
+        'marginLeft' => ['type' => 'number', 'required' => false, 'min' => 0, 'max' => 4],
         'css' => ['type' => 'string', 'required' => false, 'maxLength' => 100000],
-        'headerTemplate' => ['type' => 'string', 'required' => false, 'format' => 'date'],
+        'headerTemplate' => ['type' => 'string', 'required' => false],
         'footerTemplate' => ['type' => 'string', 'required' => false]
     ];
 
