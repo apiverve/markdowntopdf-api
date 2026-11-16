@@ -49,15 +49,15 @@ final _formatPatterns = {
 /// For more information, visit: https://apiverve.com/marketplace/markdowntopdf?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [markdown] (required) - Markdown text to convert (max 100,000 characters) [maxLength: 500000]
+/// * [markdown] (required) - Markdown text to convert (max 500,000 characters) [maxLength: 500000]
 /// * [format] - Paper size
 /// * [landscape] - Set to true for landscape orientation
-/// * [marginTop] - The top margin in inches [min: 0, max: 5]
-/// * [marginRight] - The right margin in inches [min: 0, max: 5]
-/// * [marginBottom] - The bottom margin in inches [min: 0, max: 5]
-/// * [marginLeft] - The left margin in inches [min: 0, max: 5]
+/// * [marginTop] - The top margin in inches [min: 0, max: 4]
+/// * [marginRight] - The right margin in inches [min: 0, max: 4]
+/// * [marginBottom] - The bottom margin in inches [min: 0, max: 4]
+/// * [marginLeft] - The left margin in inches [min: 0, max: 4]
 /// * [css] - Stylesheet applied to the rendered markdown, e.g. body { font-family: Georgia, serif } table { border-collapse: collapse } [maxLength: 100000]
-/// * [headerTemplate] - HTML printed at the top of every page. Spans with class pageNumber, totalPages, date or title are filled in. Use inline styles with a font-size (Chromium defaults to a tiny font) and leave room with marginTop [format: date]
+/// * [headerTemplate] - HTML printed at the top of every page. Spans with class pageNumber, totalPages, date or title are filled in. Use inline styles with a font-size (Chromium defaults to a tiny font) and leave room with marginTop
 /// * [footerTemplate] - HTML printed at the bottom of every page, with the same placeholders as headerTemplate, e.g. <span class="pageNumber"></span> of <span class="totalPages"></span>
 class MarkdowntopdfClient {
   final String apiKey;
@@ -69,12 +69,12 @@ class MarkdowntopdfClient {
     'markdown': ValidationRule(type: 'string', required: true, maxLength: 500000),
     'format': ValidationRule(type: 'string', required: false),
     'landscape': ValidationRule(type: 'boolean', required: false),
-    'marginTop': ValidationRule(type: 'number', required: false, min: 0, max: 5),
-    'marginRight': ValidationRule(type: 'number', required: false, min: 0, max: 5),
-    'marginBottom': ValidationRule(type: 'number', required: false, min: 0, max: 5),
-    'marginLeft': ValidationRule(type: 'number', required: false, min: 0, max: 5),
+    'marginTop': ValidationRule(type: 'number', required: false, min: 0, max: 4),
+    'marginRight': ValidationRule(type: 'number', required: false, min: 0, max: 4),
+    'marginBottom': ValidationRule(type: 'number', required: false, min: 0, max: 4),
+    'marginLeft': ValidationRule(type: 'number', required: false, min: 0, max: 4),
     'css': ValidationRule(type: 'string', required: false, maxLength: 100000),
-    'headerTemplate': ValidationRule(type: 'string', required: false, format: 'date'),
+    'headerTemplate': ValidationRule(type: 'string', required: false),
     'footerTemplate': ValidationRule(type: 'string', required: false),
   };
 
