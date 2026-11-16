@@ -70,12 +70,12 @@ namespace APIVerve.API.MarkdowntoPDF
             { "markdown", new ValidationRule { Type = "string", Required = true, MaxLength = 500000 } },
             { "format", new ValidationRule { Type = "string", Required = false } },
             { "landscape", new ValidationRule { Type = "boolean", Required = false } },
-            { "marginTop", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
-            { "marginRight", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
-            { "marginBottom", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
-            { "marginLeft", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 5 } },
+            { "marginTop", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginRight", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginBottom", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
+            { "marginLeft", new ValidationRule { Type = "number", Required = false, Min = 0, Max = 4 } },
             { "css", new ValidationRule { Type = "string", Required = false, MaxLength = 100000 } },
-            { "headerTemplate", new ValidationRule { Type = "string", Required = false, Format = "date" } },
+            { "headerTemplate", new ValidationRule { Type = "string", Required = false } },
             { "footerTemplate", new ValidationRule { Type = "string", Required = false } }
         };
 

@@ -11,7 +11,7 @@ namespace APIVerve.API.MarkdowntoPDF
     public class MarkdowntoPDFQueryOptions
     {
         /// <summary>
-        /// Markdown text to convert (max 100,000 characters)
+        /// Markdown text to convert (max 500,000 characters)
         /// </summary>
         [JsonProperty("markdown")]
         public string Markdown { get; set; }
